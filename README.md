@@ -30,12 +30,22 @@ Save and Run the Program.
 
 ## Program 
 
-### NAME : PRIYADARSHINI R
-
-### REG.NO :  212220230038
-
 
 ```
+Developed By : PRIYADARSHINI 
+Register No : 212220230038
+
+#include "common.h"
+#include <cuda_runtime.h>
+#include <stdio.h>
+
+/*
+ * This example demonstrates a simple vector sum on the GPU and on the host.
+ * sumArraysOnGPU splits the work of the vector sum across CUDA threads on the
+ * GPU. A 2D thread block and 2D grid are used. sumArraysOnHost sequentially
+ * iterates through vector elements on the host.
+ */
+
 void initialData(int *ip, const int size)
 {
     int i;
@@ -195,6 +205,7 @@ int main(int argc, char **argv)
     return (0);
 }
 ```
+
 ## Output:
 
 ![image](https://github.com/priya672003/PCA-Matrix-summation-with-a-2D-grid-and-2D-blocks.-Adapt-it-to-integer-matrix-addition.-/assets/81132849/fd1e97ad-b883-4311-80ad-b42dfee3df19)
